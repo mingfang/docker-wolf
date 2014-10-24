@@ -1,0 +1,1 @@
+docker run -d -v `pwd`/init.sh:/init.sh -p 5000:5000 -p 5006:5006 -p 5002:5002 -p 80:80 -p 8080:8080 -v `pwd`/nginx.conf:/etc/nginx/nginx.conf -v `pwd`:/docker -t wolf

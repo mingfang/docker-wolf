@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sv start zookeeper || exit 1
+
+exec 2>&1
+exec /storm/bin/storm nimbus

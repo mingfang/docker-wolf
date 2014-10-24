@@ -1,0 +1,6 @@
+#!/bin/sh
+
+sv start cassandra || exit 1
+
+exec 2>&1
+exec python /wolf/restful.cache.service.rt/src/server.py
